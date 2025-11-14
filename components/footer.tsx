@@ -6,8 +6,9 @@ const Footer = () => {
     <footer className="relative bg-gradient-to-b from-gray-900 via-gray-950 to-black text-gray-300 py-20 overflow-hidden">
       {/* Animated Background Blobs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-600 rounded-full filter blur-3xl opacity-10 animate-pulse"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-600 rounded-full filter blur-3xl opacity-10 animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-600 rounded-full filter blur-3xl opacity-10"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-600 rounded-full filter blur-3xl opacity-10"></div>
+        <div className="absolute -bottom-10 right-10 w-48 h-48 bg-blue-500 rounded-full filter blur-3xl opacity-15"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -18,7 +19,7 @@ const Footer = () => {
               <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-blue-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">C</span>
               </div>
-              <span className="text-white font-bold text-xl">ClixBio</span>
+              <span className="text-white font-bold text-xl bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">ClixBio</span>
             </div>
             <p className="text-gray-400 text-sm font-medium">Создайте страницу бесплатно</p>
             <p className="text-gray-500 text-xs leading-relaxed">

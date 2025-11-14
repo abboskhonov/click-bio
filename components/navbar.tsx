@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import Image from "next/image";
 
@@ -7,14 +6,14 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="relative bg-white border-b">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/50 backdrop-blur-lg border-b border-white/30 shadow-md animate-slide-down-fade">
       <div className="flex items-center justify-between px-4 md:px-8 py-4">
         <div className="flex items-center">
           <Image
             src="/logo.png"
             alt="ClixBio"
-            width={48}
-            height={48}
+            width={88}
+            height={88}
             priority
           />
         </div>
@@ -50,7 +49,7 @@ const Navbar = () => {
             {isMenuOpen ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="h-6 w-6 text-black"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -65,7 +64,7 @@ const Navbar = () => {
             ) : (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="h-6 w-6 text-black"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -84,7 +83,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white border-t">
+        <div className="md:hidden absolute top-full left-0 w-full bg-gradient-to-b from-white/60 to-white/40 backdrop-blur-3xl border-t border-white/30 shadow-lg">
           <div className="flex flex-col items-center gap-4 py-4">
             <a href="#" className="text-black font-medium hover:opacity-70">
               Home
@@ -111,4 +110,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar;  
