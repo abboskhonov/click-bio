@@ -24,6 +24,10 @@
   background: radial-gradient(at 50% 50%, rgba(243, 232, 255, 0.4), rgba(255, 255, 255, 0));
 }
 
+.radial-gradient-pricing {
+  background: radial-gradient(at center top, rgba(167, 139, 250, 0.2), rgba(255, 255, 255, 0));
+}
+
 /* Subtle floating blob animations */
 @keyframes blob-float {
   0%, 100% { transform: translateY(0) rotate(0deg); }

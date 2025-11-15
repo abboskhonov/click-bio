@@ -1,30 +1,24 @@
 "use client";
-import CustomizeSection from "@/components/customize";
-import FaqSection from "@/components/faq";
-import Features from "@/components/features";
-import Footer from "@/components/footer";
-import Hero from "@/components/hero";
-import Navbar from "@/components/navbar";
-import Audition from "@/components/audition";
-import ContactSection from "@/components/contact";
-import QrSection from "@/components/QrSection";
-import React from "react";
+import Hero from '@/components/hero';
+import Features from '@/components/features';
+import Customize from '@/components/customize';
+import Audition from '@/components/audition';
+import Contact from '@/components/contact';
+import QrSection from '@/components/QrSection';
+import PricingSection from '@/components/PricingSection';
+import FAQ from '@/components/faq';
 
-const page = () => {
+export default function Home() {
   return (
-    <>
-      <Navbar />
+    <main>
       <Hero />
       <Features />
+      
       <Audition />
       <QrSection />
-      <ContactSection />
-      
-      <FaqSection />
-      <Footer />  
-      
-    </>
+      <PricingSection />
+      <Contact />
+      <FAQ />
+    </main>
   );
-};
-
-export default page;
+}
