@@ -8,6 +8,7 @@ import QrSection from '@/components/QrSection';
 import PricingSection from '@/components/PricingSection';
 import FAQ from '@/components/faq';
 import Navbar from '@/components/navbar';
+import Footer from '@/components/footer';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <PricingSection />
       <Contact />
       <FAQ />
+      <Footer />
     </main>
   );
 }
