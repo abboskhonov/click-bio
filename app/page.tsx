@@ -7,10 +7,13 @@ import Contact from '@/components/contact';
 import QrSection from '@/components/QrSection';
 import PricingSection from '@/components/PricingSection';
 import FAQ from '@/components/faq';
+import Navbar from '@/components/navbar';
 
 export default function Home() {
   return (
     <main>
+      <Navbar />
+      
       <Hero />
       <Features />
       
